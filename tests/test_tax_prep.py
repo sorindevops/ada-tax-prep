@@ -319,9 +319,10 @@ def new_valid_deductions():
         "home office": 5000
     }
 
+
 def test_applies_new_itemized_deductions(new_valid_deductions):
     income = 50000
 
     deducted_income = calculate_deducted_income_2020(income, new_valid_deductions)
 
-    assert deducted_income == 20000
+    assert deducted_income == 15000
