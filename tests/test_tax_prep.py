@@ -161,6 +161,8 @@ def test_ignores_invalid_itemized_deductions(some_invalid_deductions):
     deducted_income = calculate_deducted_income_2020(income, some_invalid_deductions)
 
     assert deducted_income == 35000@pytest.fixture
+
+@pytest.fixture
 def all_valid_deductions():
     return {
         "charity": 5000,
